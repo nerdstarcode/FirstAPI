@@ -7,5 +7,5 @@ define("DRIVE", "mysql");
 define("HOST", "localhost");
 define("PORT", "3306");
 define("USER", "root");
-define("PASS", "");
-define("DB", "loja-exemplo");
+define("PASS", "");//usbw 
+define("DB", "loja-exemplo"); 

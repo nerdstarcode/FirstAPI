@@ -3,7 +3,7 @@
 class DAO
 {
     private $pdo = null;
-    function.connect(){
+    function connect(){
         try
         {
             $pdo = new PDO(DRIVE.":host=".HOST.";port=".PORT.";dbname=".DB , USER, PASS);
@@ -14,5 +14,6 @@ class DAO
         {
             echo ("<b>Error PDO:</b> ". $e->getMessage()."</br");
         }
+        return $pdo;
     }
 }

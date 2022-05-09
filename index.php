@@ -15,10 +15,22 @@ try{
         switch ($url[0]) {
             case "usuario":
                 switch($url[1]){
+                    case "get":{
+                        if(!isset($url[2])) throw new Exception();
+                        $user = new Usuario;
+                        $result = $user->get($url[2]);
+                    }
+                    break;
+
                     case "list":{
                         $user = new Usuario;
                         $result = $user->getAll();
                     }
+                    break;
+
+                    default:
+                        throw new Exception();
+                    break;
                 }
             break;
 
@@ -29,6 +41,7 @@ try{
                 throw new Exception();
             break;
         }
+
         http_response_code(200);
         echo json_encode($result);
     }

@@ -42,3 +42,4 @@ INSERT INTO Usuario
     (ID_User, Nome, Nasc, Cpf, Email, Senha, Tel, FotoPerfil, Ativo)
 VALUES
     (NULL, "Sthiven Melo", "1998/06/29", "15973694704", "sthivendev@gmail.com", "123654", "21 969555520", "", true);
+
